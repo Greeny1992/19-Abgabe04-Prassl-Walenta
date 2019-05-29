@@ -34,7 +34,6 @@ public class StringQueue implements Queue {
 		if(elements.size() == 0){
 			elements.remove(0);
 		}
-		
 		return element;
 	}
 
