@@ -32,6 +32,17 @@ public class StringQueueTest {
         sq.offer("a");
         sq.offer("a");
         sq.offer("a");
-        assertFalse(sq.offer("a"));
+        assertTrue(sq.offer("a"));
+    }
+
+    @Test
+    public void testPoll() throws Exception{
+        sq.offer("a");
+        assertEquals("a",sq.poll());
+    }
+
+    @Test
+    public void testPoll2() throws Exception{
+        assertEquals(null,sq.poll());
     }
 }
