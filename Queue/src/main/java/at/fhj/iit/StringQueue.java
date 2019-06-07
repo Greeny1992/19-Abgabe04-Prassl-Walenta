@@ -3,6 +3,8 @@ package at.fhj.iit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * @author Georg Prassl and Guenther Walenta
@@ -11,6 +13,7 @@ import java.util.NoSuchElementException;
  */
 
 public class StringQueue implements Queue {
+    private static final Logger logger = LogManager.getLogger(StringQueue.class);
 	/**
 	 * Attributes of the class
 	 */
