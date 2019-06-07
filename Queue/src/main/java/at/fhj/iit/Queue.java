@@ -1,7 +1,7 @@
 package at.fhj.iit;
 
 public interface Queue {
-	
+
 	/**
 	 *  Adds the element obj to the queue. 
 	 *  If the addition is successful, the method returns true else false.

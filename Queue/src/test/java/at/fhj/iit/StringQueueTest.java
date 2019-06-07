@@ -3,7 +3,9 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class StringQueueTest {
+import java.util.NoSuchElementException;
+
+public class  StringQueueTest {
     private StringQueue sq;
 
     @Before
@@ -54,8 +56,16 @@ public class StringQueueTest {
         assertEquals("b", sq.poll());
     }
 
-    @Test
+    @Test(expected = NoSuchElementException.class)
     public void testRemove() throws  Exception{
+        sq.remove();
+    }
 
+    @Test
+    public void testRemove2() throws  Exception{
+        sq.offer("a");
+        sq.offer("b");
+        assertEquals("a",sq.remove());
+        assertEquals("b", sq.remove());
     }
 }

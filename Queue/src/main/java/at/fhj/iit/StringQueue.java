@@ -39,8 +39,7 @@ public class StringQueue implements Queue {
 
 	@Override
 	public String remove() {
-		String element = poll();		
-		element = "";
+		String element = poll();
 		if(element == null)
 			throw new NoSuchElementException("there's no element any more");
 		
