@@ -45,4 +45,17 @@ public class StringQueueTest {
     public void testPoll2() throws Exception{
         assertEquals(null,sq.poll());
     }
+
+    @Test
+    public void testPoll3() throws Exception{
+        sq.offer("a");
+        sq.offer("b");
+        assertEquals("a",sq.poll());
+        assertEquals("b", sq.poll());
+    }
+
+    @Test
+    public void testRemove() throws  Exception{
+
+    }
 }
