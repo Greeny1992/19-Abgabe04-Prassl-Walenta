@@ -25,6 +25,7 @@ public class StringQueue implements Queue {
 	 * @param maxSize Defines the maximum number of elements which the queue can hold.
 	 */
 	public StringQueue(int maxSize){
+		logger.info("constructor with capacity " + maxSize);
 		this.maxSize = maxSize;
 	}
 
@@ -35,6 +36,7 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public boolean offer(String obj) {
+		logger.info("offering "+obj);
 		if(elements.size()< maxSize)
 			elements.add(obj);
 		else
@@ -49,6 +51,7 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public String poll() {
+		logger.info("poll");
 		String element = peek();
 		
 		if(elements.size() > 0){
@@ -63,9 +66,11 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public String remove() {
-		if(elements.size()==0)
+		logger.info("remove");
+		if(elements.size()==0){
+			logger.error("throw NoSuchElementException");
 			throw new NoSuchElementException("there's no element any more");
-
+		}
 		return poll();
 	}
 
@@ -75,6 +80,7 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public String peek() {
+		logger.info("peek");
 		String element;
 		if(elements.size() > 0)
 			element = elements.get(0);
@@ -89,8 +95,11 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public String element() {
-		if(elements.size()==0)
+		logger.info("element");
+		if(elements.size()==0){
+			logger.error("throw NoSuchElementException");
 			throw new NoSuchElementException("there's no element any more");
+		}
 		return peek();
 	}
 

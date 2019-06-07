@@ -16,6 +16,8 @@
 
 ![Screenshot of Documentation from testclass](./media/UnitTests-Screenshot.PNG)
 
+![Screenshot of the Logger](./media/Logger.png)
+
 ## Links/Literatur
 
 - [x] Übertragen Angabe Taskliste in Markdown Readme
@@ -40,13 +42,13 @@
 - [x] Passen Sie Ihr pom.xml auf das Projekt an, damit Sie das Projekt erstellen aber auch Dokumentation generieren können.
     - [x] EntwicklerInnen Informationen hinzufügen.
     - [x] Integration Logging Bibliothek log4j mittels Maven Dependencies.
-- [ ] Log4j (Version 2) integrieren und in jeder Methode ins Log schreiben
-    - [ ] Siehe aktualisiertes Stack Beispiel.
-    - [ ] Erstellen Sie einen Statischen Logger der auf die Konsole schreibt.
-    - [ ] Konfigurieren Sie Logger über ein properties File.
-    - [ ] Geben Sie eine Info Lognachricht bei Aufruf einer jeden Methode aus.
-    - [ ] Geben Sie eine Error Lognachricht aus bevor Sie einen Fehler werfen.
-    - [ ] Ergebnisse (Konsolenausgabe) als Bild in Dokumentation einfließen lassen.
+- [x] Log4j (Version 2) integrieren und in jeder Methode ins Log schreiben
+    - [x] Siehe aktualisiertes Stack Beispiel.
+    - [x] Erstellen Sie einen Statischen Logger der auf die Konsole schreibt.
+    - [x] Konfigurieren Sie Logger über ein properties File.
+    - [x] Geben Sie eine Info Lognachricht bei Aufruf einer jeden Methode aus.
+    - [x] Geben Sie eine Error Lognachricht aus bevor Sie einen Fehler werfen.
+    - [x] Ergebnisse (Konsolenausgabe) als Bild in Dokumentation einfließen lassen.
 - [ ] Maven Site Dokumentation erstellen
     - [ ] Inklusive Javadoc Code und Javadoc Test Klassen
     - [ ] Inklusive Menü mit Verweis auf manuell erstellte Seite
