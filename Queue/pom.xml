@@ -8,8 +8,13 @@
     <artifactId>Queue</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-	<developers>
-		</developer>  
+    <url>https://github.com/Greeny1992/19-Abgabe04-Prassl-Walenta.git</url>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+	<developers> 
         <developer>
 		  <id>georgp</id>
 		  <name>Georg Prassl</name>
@@ -20,9 +25,6 @@
 			<role>Student</role>
 		  </roles>
 		  <timezone>Europe/Vienna</timezone>
-		  <properties>
-			<picUrl>https://avatars3.githubusercontent.com/u/48915391?s=460&v=4</picUrl>
-		  </properties>
 		</developer>     
         <developer>
 		  <id>guentherw</id>
@@ -34,12 +36,56 @@
 			<role>Student</role>
 		  </roles>
 		  <timezone>Europe/Vienna</timezone>
-		  <properties>
-			<picUrl>https://avatars3.githubusercontent.com/u/48951140?s=400&v=4</picUrl>
-		  </properties>
 		</developer>  
 	</developers>
 	
+    <reporting>
+        <plugins>  
+            <!-- java doc support for maven site -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <reportSets>
+				
+                    <!-- reports our javadocs in our src code and test code -->
+                    <reportSet>
+                        <reports>
+                            <report>javadoc</report>
+                            <report>test-javadoc</report>
+                        </reports>
+                    </reportSet>
+					
+					<!-- aggregate reportSet, to define in poms having modules -->
+                    <reportSet>
+                        <id>aggregate</id>
+                        <inherited>false</inherited><!-- don't run aggregate in child modules -->
+                        <reports>
+                            <report>aggregate</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+			
+            <!-- integrate test results -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+            </plugin>
+			
+            <!-- Cross References -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+            </plugin>
+			
+            <!-- integrate test Code Coverage -->
+            <plugin>
+                <artifactId>maven-clover-plugin</artifactId>
+            </plugin>
+			
+        </plugins>
+    </reporting>   
+
     <build>
         <plugins>
             <plugin>
@@ -50,9 +96,27 @@
                     <release>11</release>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
-
+    
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
