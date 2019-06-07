@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 /**
- * @author Georg Praßl and Günther Walenta
- * @last_change 07.06.2019
+ * @author Georg Prassl and Guenther Walenta
+ * last_change: 07.06.2019
  * This capacity-restricted queue is designed for holding String elements and works based on the FIFO-principle
  */
 
@@ -14,15 +14,15 @@ public class StringQueue implements Queue {
 	/**
 	 * Attributes of the class
 	 */
-	private List<String> elements = new ArrayList<String>();
+	private List<String> elements = new ArrayList<>();
 	private int maxSize = 5;
 
 	/**
 	 * Constructor
-	 * @param maxsize Defines the maximum number of elements which the queue can hold.
+	 * @param maxSize Defines the maximum number of elements which the queue can hold.
 	 */
-	public StringQueue(int maxsize){
-		maxSize = maxSize;
+	public StringQueue(int maxSize){
+		this.maxSize = maxSize;
 	}
 
 	/**
@@ -63,8 +63,7 @@ public class StringQueue implements Queue {
 		if(elements.size()==0)
 			throw new NoSuchElementException("there's no element any more");
 
-		String element = poll();
-		return element;
+		return poll();
 	}
 
 	/**

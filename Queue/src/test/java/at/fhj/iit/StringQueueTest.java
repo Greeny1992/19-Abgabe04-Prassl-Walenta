@@ -9,18 +9,17 @@ public class  StringQueueTest {
     private StringQueue sq;
 
     @Before
-    public void setup() throws Exception{
-        sq = new StringQueue(5);
+    public void setup(){
+        sq = new StringQueue(4);
     }
 
     @Test
-    public void testOffer1() throws Exception{
+    public void testOffer1(){
         assertTrue(sq.offer("#YOLO"));
     }
 
     @Test
-    public void testOffer2() throws Exception{
-        sq.offer("a");
+    public void testOffer2(){
         sq.offer("a");
         sq.offer("a");
         sq.offer("a");
@@ -29,8 +28,7 @@ public class  StringQueueTest {
     }
 
     @Test
-    public void testOffer3() throws Exception{
-        sq.offer("a");
+    public void testOffer3(){
         sq.offer("a");
         sq.offer("a");
         sq.offer("a");
@@ -38,18 +36,18 @@ public class  StringQueueTest {
     }
 
     @Test
-    public void testPoll() throws Exception{
+    public void testPoll(){
         sq.offer("a");
         assertEquals("a",sq.poll());
     }
 
     @Test
-    public void testPoll2() throws Exception{
-        assertEquals(null,sq.poll());
+    public void testPoll2(){
+        assertNull(sq.poll());
     }
 
     @Test
-    public void testPoll3() throws Exception{
+    public void testPoll3(){
         sq.offer("a");
         sq.offer("b");
         assertEquals("a",sq.poll());
@@ -57,12 +55,12 @@ public class  StringQueueTest {
     }
 
     @Test(expected = NoSuchElementException.class)
-    public void testRemove() throws  Exception{
+    public void testRemove(){
         sq.remove();
     }
 
     @Test
-    public void testRemove2() throws  Exception{
+    public void testRemove2(){
         sq.offer("a");
         sq.offer("b");
         assertEquals("a",sq.remove());
@@ -70,32 +68,32 @@ public class  StringQueueTest {
     }
 
     @Test
-    public void testRemove3() throws  Exception{
+    public void testRemove3(){
         sq.offer(null);
-        assertEquals(null,sq.remove());
+        assertNull(sq.remove());
     }
 
 
 
     @Test
-    public void testPeek() throws Exception{
+    public void testPeek(){
         sq.offer("a");
         sq.offer("b");
         assertEquals("a",sq.peek());
         assertEquals("a", sq.peek());
     }
     @Test
-    public void testPeek2() throws Exception{
-        assertEquals(null, sq.peek());
+    public void testPeek2(){
+        assertNull(sq.peek());
     }
 
     @Test(expected = NoSuchElementException.class)
-    public void testElement() throws  Exception{
+    public void testElement(){
         sq.element();
     }
 
     @Test
-    public void testElement2() throws  Exception{
+    public void testElement2(){
         sq.offer("a");
         sq.offer("b");
         assertEquals("a",sq.element());
@@ -103,10 +101,10 @@ public class  StringQueueTest {
     }
 
     @Test
-    public void testElement3() throws  Exception{
+    public void testElement3(){
         sq.offer(null);
-        assertEquals(null,sq.element());
-        assertEquals(null,sq.element());
+        assertNull(sq.element());
+        assertNull(sq.element());
     }
 
 
