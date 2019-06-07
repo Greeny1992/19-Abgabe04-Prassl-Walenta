@@ -10,7 +10,7 @@ public class  StringQueueTest {
 
     @Before
     public void setup() throws Exception{
-        sq = new StringQueue(5);
+        sq = new StringQueue(7);
     }
 
     @Test
@@ -57,12 +57,12 @@ public class  StringQueueTest {
     }
 
     @Test(expected = NoSuchElementException.class)
-    public void testRemove() throws  Exception{
+    public void testRemove() throws Exception{
         sq.remove();
     }
 
     @Test
-    public void testRemove2() throws  Exception{
+    public void testRemove2() throws Exception{
         sq.offer("a");
         sq.offer("b");
         assertEquals("a",sq.remove());
@@ -70,8 +70,20 @@ public class  StringQueueTest {
     }
 
     @Test
-    public void testRemove3() throws  Exception{
+    public void testRemove3() throws Exception{
         sq.offer(null);
         assertEquals(null,sq.remove());
+    }
+
+    @Test
+    public void testPeek() throws Exception{
+        sq.offer("a");
+        sq.offer("b");
+        assertEquals("a",sq.peek());
+        assertEquals("a", sq.peek());
+    }
+    @Test
+    public void testPeek2() throws Exception{
+        assertEquals(null, sq.peek());
     }
 }
