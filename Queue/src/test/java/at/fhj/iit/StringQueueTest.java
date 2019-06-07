@@ -74,4 +74,25 @@ public class  StringQueueTest {
         sq.offer(null);
         assertEquals(null,sq.remove());
     }
+
+
+    @Test(expected = NoSuchElementException.class)
+    public void testElement() throws  Exception{
+        sq.element();
+    }
+
+    @Test
+    public void testElement2() throws  Exception{
+        sq.offer("a");
+        sq.offer("b");
+        assertEquals("a",sq.element());
+        assertEquals("a", sq.element());
+    }
+
+    @Test
+    public void testElement3() throws  Exception{
+        sq.offer(null);
+        assertEquals(null,sq.element());
+        assertEquals(null,sq.element());
+    }
 }
