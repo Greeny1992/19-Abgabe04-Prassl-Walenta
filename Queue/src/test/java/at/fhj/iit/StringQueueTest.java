@@ -68,4 +68,10 @@ public class  StringQueueTest {
         assertEquals("a",sq.remove());
         assertEquals("b", sq.remove());
     }
+
+    @Test
+    public void testRemove3() throws  Exception{
+        sq.offer(null);
+        assertEquals(null,sq.remove());
+    }
 }
