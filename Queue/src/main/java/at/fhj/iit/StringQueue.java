@@ -19,7 +19,7 @@ public class StringQueue implements Queue {
 	
 	@Override
 	public boolean offer(String obj) {
-		if(elements.size()!= maxSize)
+		if(elements.size()< maxSize)
 			elements.add(obj);
 		else
 			return false;
@@ -31,7 +31,7 @@ public class StringQueue implements Queue {
 	public String poll() {
 		String element = peek();
 		
-		if(elements.size() != 0){
+		if(elements.size() > 0){
 			elements.remove(0);
 		}
 		return element;
