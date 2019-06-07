@@ -1,28 +1,14 @@
 ﻿# LAB REPORT 19-Abgabe04-Prassl-Walenta
 
 ***
-<table>
-
-    <tr>
-        <td>Abgabe: </td>
-        <td>4</td>
-    </tr>
-	<tr>
-        <td>Name: </td>
-        <td>Georg Praßl </td>
-    </tr>
-    <tr>
-        <td>Name: </td>
-        <td>Günther Walenta </td>
-    </tr>
-
-    <tr>
-        <td>URL: </td>
-        <td>https://github.com/Greeny1992/19-Abgabe04-Prassl-Walenta</td>
-    </tr>
-</table>
-
+| Abgabe: | 4                                                        |
+|---------|----------------------------------------------------------|
+| Name:   | Georg Praßl                                              |
+| Name:   | Günther Walenta                                          |
+| URL:    | https://github.com/Greeny1992/19-Abgabe04-Prassl-Walenta |
 ***
+
+
 
 ## Vorgehen
 
