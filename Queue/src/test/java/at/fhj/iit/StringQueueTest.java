@@ -76,6 +76,19 @@ public class  StringQueueTest {
     }
 
 
+
+    @Test
+    public void testPeek() throws Exception{
+        sq.offer("a");
+        sq.offer("b");
+        assertEquals("a",sq.peek());
+        assertEquals("a", sq.peek());
+    }
+    @Test
+    public void testPeek2() throws Exception{
+        assertEquals(null, sq.peek());
+    }
+
     @Test(expected = NoSuchElementException.class)
     public void testElement() throws  Exception{
         sq.element();
@@ -95,4 +108,6 @@ public class  StringQueueTest {
         assertEquals(null,sq.element());
         assertEquals(null,sq.element());
     }
+
+
 }
