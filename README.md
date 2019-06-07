@@ -1,16 +1,16 @@
-# 19-Abgabe04-Prassl-Walenta
+﻿# 19-Abgabe04-Prassl-Walenta
 
 ## TO-DO
 
 - [x] Übertragen Angabe Taskliste in Markdown Readme
-- [ ]  Einspielen Queue Vorlage aus Repository: https://github.com/michaelulm/softwareconfiguration-management/tree/master/test-automation/Queue
+- [x]  Einspielen Queue Vorlage aus Repository: https://github.com/michaelulm/softwareconfiguration-management/tree/master/test-automation/Queue
 - [ ] Taskergebnisse Schritt für Schritt auf Git stellen
     - [ ] Führrung Taskliste
     - [ ] Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
-- [ ] Korrigieren Sie den Code bzw. Debuggen Sie ihn um die Fehler zu finden
-    - [ ] Es befinden sich gesamt 3 Fehler im Source Code.
-    - [ ] Bei Bedarf Optimieren Sie das Queue Beispiel.
-    - [ ] Ergänzen Sie das Beispiel nach eigenen Ermessen um es testen zu können.
+- [x] Korrigieren Sie den Code bzw. Debuggen Sie ihn um die Fehler zu finden
+    - [x] Es befinden sich gesamt 3 Fehler im Source Code.
+    - [x] Bei Bedarf Optimieren Sie das Queue Beispiel.
+    - [x] Ergänzen Sie das Beispiel nach eigenen Ermessen um es testen zu können.
 - [ ] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
     - [ ] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report. Konfigurationsmanagement Vertiefende Gesamtwiederholung Arbeitsaufträge.docx Seite 4 von 6 Institut Internettechnologien und -Anwendungen
 - [ ] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
