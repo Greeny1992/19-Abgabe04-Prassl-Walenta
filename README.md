@@ -14,10 +14,11 @@
 - [x] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
     - [x] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report. 
 ![Screenshot of Documentation](./media/JavaDoc-ScreenShot.png)
-- [ ] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
-    - [ ] Sie werden die „selben“ Testfälle mehrfach erstellen müssen um „mehrere Variationen“ für einen möglichst vollständigen Test zu erreichen. Achten Sie dabei mit unterschiedlichen Daten zu testen.
-    - [ ] JavaDoc Kommentare erstellen.
-    - [ ] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
+- [x] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
+    - [x] Sie werden die „selben“ Testfälle mehrfach erstellen müssen um „mehrere Variationen“ für einen möglichst vollständigen Test zu erreichen. Achten Sie dabei mit unterschiedlichen Daten zu testen.
+    - [x] JavaDoc Kommentare erstellen.
+    - [x] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
+![Screenshot of Documentation from testclass](./media/UnitTests-Screenshot.png)
 - [ ] Passen Sie Ihr pom.xml auf das Projekt an, damit Sie das Projekt erstellen aber auch Dokumentation generieren können.
     - [ ] EntwicklerInnen Informationen hinzufügen.
     - [ ] Integration Logging Bibliothek log4j mittels Maven Dependencies.
