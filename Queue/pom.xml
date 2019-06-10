@@ -85,16 +85,6 @@
                     </reportSet>
                 </reportSets>
                 <version>3.1.0</version>
-                <configuration>
-                    <tags>
-                        <tag>
-                            <!--@result is replaced true "Test assertion:"-->
-                            <name>result</name>
-                            <placement>a</placement>
-                            <head>Test assertion:</head>
-                        </tag>
-                    </tags>
-                </configuration>
             </plugin>
 
             <!-- integrate test results -->
@@ -133,19 +123,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.7.1</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>3.1.0</version>
-                <executions>
-                    <execution>
-                        <id>auto-clean</id>
-                        <phase>initialize</phase>
-                        <goals>
-                            <goal>clean</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

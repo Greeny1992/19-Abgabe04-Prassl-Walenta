@@ -4,7 +4,7 @@
 	<version position="left"/>
 	<body>
 		<menu name="Overview">
-			<item name="Queue" href="stringQueue.html" />
+			<item name="Queue" href="queue.html" />
 		</menu>    
 		<menu ref="reports" />
 	</body>
