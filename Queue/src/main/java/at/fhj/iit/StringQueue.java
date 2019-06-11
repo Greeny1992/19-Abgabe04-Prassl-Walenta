@@ -26,7 +26,7 @@ public class StringQueue implements Queue {
 	 */
 	public StringQueue(int maxSize){
 		logger.info("constructor with capacity " + maxSize);
-		this.maxSize = maxSize;
+		if (maxSize>=0) this.maxSize = maxSize;
 	}
 
 	/**
