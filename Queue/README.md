@@ -54,7 +54,8 @@ Consolenausgebe:
 ![Screenshot of the Logger](./media/Logger.png)
 
 ### 5. Maven Site
-
+![Screenshot of Maven Site ](./media/Maven_site_sc.PNG)
+![Screenshot of the manuel created Queue-page](./media/Maven_site_queue_sc.PNG)
 ### 6. Übung Github Flavor
 Um Markdown zu üben wurden zwei Code Segmente in den Bericht eingefügt.
 Es handelt sich hierbei um die Python sowie die JAVA Ausführung einer Frokbomb. 
@@ -105,12 +106,12 @@ public class forkbomb
     - [x] Geben Sie eine Info Lognachricht bei Aufruf einer jeden Methode aus.
     - [x] Geben Sie eine Error Lognachricht aus bevor Sie einen Fehler werfen.
     - [x] Ergebnisse (Konsolenausgabe) als Bild in Dokumentation einfließen lassen.
-- [ ] Maven Site Dokumentation erstellen
-    - [ ] Inklusive Javadoc Code und Javadoc Test Klassen
-    - [ ] Inklusive Menü mit Verweis auf manuell erstellte Seite
-        - [ ] Seite erläutert Funktionsweise Queue
-    - [ ] Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
-        - [ ] Der Inhalt der manuell erstellten Seite sollte ersichtlich sein Konfigurationsmanagement Vertiefende Gesamtwiederholung Arbeitsaufträge.docx Seite 5 von 6 Institut Internettechnologien und -Anwendungen
+- [x] Maven Site Dokumentation erstellen
+    - [x] Inklusive Javadoc Code und Javadoc Test Klassen
+    - [x] Inklusive Menü mit Verweis auf manuell erstellte Seite
+        - [x] Seite erläutert Funktionsweise Queue
+    - [x] Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
+        - [x] Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
 - [ ] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
     - [x] Übertragung Information aus Labreport Template.
     - [ ] Alle Schritte dieser Übung nachvollziehbar erläutern.
