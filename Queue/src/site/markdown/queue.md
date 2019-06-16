@@ -32,3 +32,7 @@ Warteschlangen werden außerdem häufig zur Datenübergabe zwischen asynchronen 
 Graphische Benutzeroberflächen puffern Maus- und Tastaturereignisse in einer sogenannten „Message Queue“ nach dem FIFO-Prinzip, d. h. in der Reihenfolge ihres Auftretens. Anschließend leiten sie diese dann, abhängig von Position und Eingabefokus, an die korrekten Prozesse weiter.
 
 Eine Warteschlange kann auch zum Parallelisieren verwendet werden. Dies kann man sich wie bei einem Postamt vorstellen, bei dem es mehrere Schalter für eine Warteschlange gibt. So können Aufgaben eingestellt werden, die später parallel abgearbeitet werden. 
+
+
+Quelle: 
+[Wikipedia](https://de.wikipedia.org/wiki/Warteschlange_(Datenstruktur\) "Wikipedia Queue")

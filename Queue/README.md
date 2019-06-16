@@ -27,6 +27,31 @@ Außerdem wurden viele kleine Optimierungen vorgenommen wie das verbieten einer 
 
 ### 3. Java-Doc Kommentare
 
+Um eine JavaDoc-Dokumentation zu erstellen, ist es erforderlich, JavaDoc Kommentare im Source-Code zu implementieren.
+Es gibt für bestimmte Informationen wie return-Werte oder Übergabeparameter @-Annotationen. Die Wichtigsten sind hier aufgelistet:
+
+Im Header:
+* @author : Der Autor oder die Autoren des Codes
+* @version : Welche Version dieser Code ist
+* @since : Wann wurde der Code zuletzt geändert
+
+Im Body:
+* @param : Übergabeparameter einer Methode
+* @return : Was eine Methode zurückgeben sollte
+* @throws/exception : Wenn die Methode eine Exception wirft
+
+Die Struktur jener Kommentare hat wie im folgenden Beispiel-Kommentar auszusehen:
+
+```java 
+/**
+ * Adds the elements to the queue.
+ * @param obj The element which should be added
+ * @return Returns true if successful otherwise false
+ */
+```
+
+Wenn man dann eine JavaDoc-Dokumentation generiert, sieht das Ergebnis wie in folgenden Screenshots aus:
+
 ![Screenshot of Documentation](./media/JavaDoc-ScreenShot.png)
 
 ![Screenshot of Documentation from testclass](./media/UnitTests-Screenshot.PNG)
@@ -54,7 +79,16 @@ Consolenausgebe:
 ![Screenshot of the Logger](./media/Logger.png)
 
 ### 5. Maven Site
+Zum Erstellen der Maven site, mussten im pom.xml zwei Plugins eingefügt werden.
+Zuerst das maven-site-plugin in den build und den reporting Abschnitt. 
+Es musste auch ein site.xml erstellt werden, damit man die Grundstruktur des Reports erhält und den Link zur manuell erstellten Seite einbinden kann.
+Somit konnte ein Maven-Site report erstellt werden. 
+Zusätzlich wurde das maven-surefire-report-plugin hinzugefügt, damit man die Testergebnisse ebenso im Report begutachten kann.
+
 ![Screenshot of Maven Site ](./media/Maven_site_sc.PNG)
+
+Des weiteren wurde eine Seite manuell erstellt welche das Grundprinzip der Queue genau erklärt. 
+Dafür musste im site ordner ein markdown-folder generiert werden. Dort befindet sich das Queue.md welches dann zur Erstellung der html-Seite verwendet wird. Im Folder resources/images werden die Bilder gespeichert, welche auf dieser Seite angezeigt werden sollen.
 ![Screenshot of the manuel created Queue-page](./media/Maven_site_queue_sc.PNG)
 ### 6. Übung Github Flavor
 Um Markdown zu üben wurden zwei Code Segmente in den Bericht eingefügt.
