@@ -116,8 +116,11 @@ Das PDF wurde mittels [Dillinger.io](dillinger.io "dillinger") erstellt.
 ## Links/Literatur
 * [Dillinger](dillinger.io)
 * [Markdown Cheat-Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Maven Site](https://maven.apache.org/guides/mini/guide-site.html)
+* [Maven Site](https://maven.apache.org/plugins/maven-site-plugin/)
+* [JavaDoc](https://www.oracle.com/technetwork/java/javase/documentation/index-137868.html)
+* [Log4J](https://logging.apache.org/log4j/2.x/maven-artifacts.html)
 * [Allgemine Infos und Quellcode](https://github.com/michaelulm/software-configuration-management)
+
 
 ##Taskliste
 - [x] Übertragen Angabe Taskliste in Markdown Readme
