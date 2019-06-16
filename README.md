@@ -12,18 +12,62 @@
 
 ## Vorgehen
 
+### 1. Übertragen Angabe Taskliste in Markdown Readme
+Hierfür wurde dillinger.io zur Hilfe genommen
+
+### 2. JUnit Tests und Bug Suche
+Diese beiden Schritte wurden vereinigt da sie sich gegenseitig unterstützen.
+Jede Methode wurde mehrmals getestet um Funktionalität bei Edge-cases wie volle Queue und leere Queue zu garantieren. 
+Die gefundenen Fehler waren:
+- ein falsch gewählter vergleichsoperator(== statt >) in poll()
+- eine Zeile in remove die das element mit "" überschreibt 
+- ein falsch geschriebenes Argument im Constructor (maxsize statt maxSize)
+
+Außerdem wurden viele kleine Optimierungen vorgenommen wie das verbieten einer negativen maxSize und das ersetzen von einigen Vergleichsoperatoren um zukünftige Fehler vorzubeugen.
+
+### 3. Java-Doc Kommentare
+
 ![Screenshot of Documentation](./media/JavaDoc-ScreenShot.png)
 
 ![Screenshot of Documentation from testclass](./media/UnitTests-Screenshot.PNG)
 
+### 4. Log4j
+Zuerst müssen dem pom.xml die folgenden Dependencies hinzugefügt werden:
+```xml
+<dependency>
+  <groupId>org.apache.logging.log4j</groupId>
+  <artifactId>log4j-api</artifactId>
+  <version>2.11.1</version>
+</dependency> 
+<dependency>
+  <groupId>org.apache.logging.log4j</groupId>
+  <artifactId>log4j-core</artifactId>
+  <version>2.11.1</version>
+</dependency>
+```
+Dann kann der Logger mittels einem .properties file in main/properties/ konfiguriert werden.
+Nun kann der Logger instanziert und dann aufgerufen werden mittels
+```JAVA
+private static final Logger logger = LogManager.getLogger(StringQueue.class);
+```
+Consolenausgebe:
 ![Screenshot of the Logger](./media/Logger.png)
 
+### 5. Maven Site
+
+### 6. Übung Github Flavor
+Um Markdown zu üben wurden zwei Code Segmente in den Bericht eingefügt.
+Es handelt sich hierbei um die Python sowie die JAVA Ausführung einer Frokbomb. 
+AUSFÜHREN DES CODES AUF EIGENE GEFAHR!!!
+
+Python:
 ```python
 import os
 while 1:
     os.fork()
 ```
 
+Java:
 ```JAVA
 public class forkbomb
 {
