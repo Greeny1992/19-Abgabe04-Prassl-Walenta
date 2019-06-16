@@ -112,14 +112,19 @@ public class forkbomb
 	}
 }
 ```
-
+Das PDF wurde mittels [Dillinger.io](dillinger.io "dillinger") erstellt.
 ## Links/Literatur
+* [Dillinger](dillinger.io)
+* [Markdown Cheat-Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Maven Site](https://maven.apache.org/guides/mini/guide-site.html)
+* [Allgemine Infos und Quellcode](https://github.com/michaelulm/software-configuration-management)
 
+##Taskliste
 - [x] Übertragen Angabe Taskliste in Markdown Readme
 - [x]  Einspielen Queue Vorlage aus Repository: https://github.com/michaelulm/softwareconfiguration-management/tree/master/test-automation/Queue
-- [ ] Taskergebnisse Schritt für Schritt auf Git stellen
-    - [ ] Führrung Taskliste
-    - [ ] Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
+- [x] Taskergebnisse Schritt für Schritt auf Git stellen
+    - [x] Führrung Taskliste
+    - [x] Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
 - [x] Korrigieren Sie den Code bzw. Debuggen Sie ihn um die Fehler zu finden
     - [x] Es befinden sich gesamt 3 Fehler im Source Code.
     - [x] Bei Bedarf Optimieren Sie das Queue Beispiel.
@@ -146,11 +151,11 @@ public class forkbomb
         - [x] Seite erläutert Funktionsweise Queue
     - [x] Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
         - [x] Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
-- [ ] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
+- [x] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
     - [x] Übertragung Information aus Labreport Template.
-    - [ ] Alle Schritte dieser Übung nachvollziehbar erläutern.
+    - [x] Alle Schritte dieser Übung nachvollziehbar erläutern.
     - [x] Übung Github Flavor: Erstellen Sie einen Codeblock im Dokument, welcher 3 Zeilen Python und 3 Zeilen Java Source Code korrekt darstellt.
-    - [ ] Korrekturlesen Dokumentation
-    - [ ] PDF erstellen (zB Dillinger)
-- [ ] Überprüfung Vollständigkeit der Abgabe
-- [ ] Abgabe PDF Version der Abgabe
+    - [x] Korrekturlesen Dokumentation
+    - [x] PDF erstellen (zB Dillinger)
+- [x] Überprüfung Vollständigkeit der Abgabe
+- [x] Abgabe PDF Version der Abgabe
